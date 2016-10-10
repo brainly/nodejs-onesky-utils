@@ -7,5 +7,6 @@ global.rootRequire = function (name) {
 
 module.exports = {
   getFile: rootRequire('lib/getFile.js'),
+  getMultilingualFile: rootRequire('lib/getMultilingualFile.js'),
   postFile: rootRequire('lib/postFile.js')
 };
