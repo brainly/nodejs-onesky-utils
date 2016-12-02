@@ -22,6 +22,27 @@ onesky.getFile(options).then(function(content) {
   console.log(error);
 });
 ```
+### getMultiLingualFile
+
+```
+var onesky = require('onesky-utils');
+
+var options = {
+  language: 'en_EN',
+  secret: '1234567',
+  apiKey: 'abcdefg',
+  projectId: '123',
+  fileName: 'translations.po',
+  format: 'I18NEXT_MULTILINGUAL_JSON'
+};
+
+onesky.getMultiLingualFile(options).then(function(content) {
+  console.log(content);
+}).catch(function(error) {
+  console.log(error);
+});
+```
+
 
 ### postFile
 
@@ -61,10 +82,24 @@ Returns file content via promise.
 
 The `options` object is required. Options include:
 
-- **options.projectId** - numerical ID of the project
-- **options.fileName** - name of the translation file
-- **options.language** - language version
-- **options.secret** - secret and apiKey are used for authentication
+- **options.projectId** - Numerical ID of the project
+- **options.fileName** - Name of the translation file
+- **options.language** - Language version
+- **options.secret** - `secret` and `apiKey` are used for authentication
+- **options.apiKey**
+
+### getFile(options)
+Downloads translation file from OneSky.
+
+Returns file content via promise.
+
+The `options` object is required. Options include:
+
+- **options.projectId** - Numerical ID of the project
+- **options.fileName** - Name of the translation file
+- **options.format** - Response file format (Optional. Defaults to `I18NEXT_MULTILINGUAL_JSON`)
+- **options.language** - Language version
+- **options.secret** - `secret` and `apiKey` are used for authentication
 - **options.apiKey**
 
 ### postFile(options)
@@ -72,13 +107,13 @@ Uploads translation file to OneSky.
 
 The `options` object is required. Options include:
 
-- **options.projectId** - numerical ID of the project
-- **options.fileName** - name of the translation file
-- **options.language** - language version
-- **options.format** - file format ([list here](https://github.com/onesky/api-documentation-platform/blob/master/reference/format.md))
-- **options.content** string with the content of the file
-- **options.keepStrings** boolean saying if already uploaded strings not present on this file should be deprecated or keept
-- **options.secret** - secret and apiKey are used for authentication
+- **options.projectId** - Numerical ID of the project
+- **options.fileName** - Name of the translation file
+- **options.language** - Language version
+- **options.format** - File format ([list here](https://github.com/onesky/api-documentation-platform/blob/master/reference/format.md))
+- **options.content** String with the content of the file
+- **options.keepStrings** Boolean saying if already uploaded strings not present on this file should be deprecated or keept
+- **options.secret** - `secret` and `apiKey` are used for authentication
 - **options.apiKey**
 
 Returns JSON API response content via promise.
