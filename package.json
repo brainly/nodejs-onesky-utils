@@ -1,6 +1,6 @@
 {
   "name": "onesky-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Node.js utils for working with OneSky translation service.",
   "main": "index.js",
   "scripts": {
