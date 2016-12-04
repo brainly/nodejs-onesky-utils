@@ -88,8 +88,8 @@ The `options` object is required. Options include:
 - **options.secret** - `secret` and `apiKey` are used for authentication
 - **options.apiKey**
 
-### getFile(options)
-Downloads translation file from OneSky.
+### getMultiLingualFile(options)
+Downloads multi-language translations from OneSky.
 
 Returns file content via promise.
 
