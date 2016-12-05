@@ -5,7 +5,7 @@ Node.js utils for working with [OneSky](http://www.oneskyapp.com/) translation s
 
 ### getFile
 
-```
+```js
 var onesky = require('onesky-utils');
 
 var options = {
@@ -24,7 +24,7 @@ onesky.getFile(options).then(function(content) {
 ```
 ### getMultiLingualFile
 
-```
+```js
 var onesky = require('onesky-utils');
 
 var options = {
@@ -46,7 +46,7 @@ onesky.getMultiLingualFile(options).then(function(content) {
 
 ### postFile
 
-```
+```js
 var onesky = require('onesky-utils');
 
 var options = {
