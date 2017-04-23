@@ -113,6 +113,7 @@ The `options` object is required. Options include:
 - **options.format** - File format ([list here](https://github.com/onesky/api-documentation-platform/blob/master/reference/format.md))
 - **options.content** String with the content of the file
 - **options.keepStrings** Boolean saying if already uploaded strings not present on this file should be deprecated or keept
+- **options.AllowSameAsOriginal** Keep the translations that are the same as source text (Optional. Defaults to `false`)
 - **options.secret** - `secret` and `apiKey` are used for authentication
 - **options.apiKey**
 
