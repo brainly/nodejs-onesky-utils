@@ -43,7 +43,35 @@ onesky.getMultilingualFile(options).then(function(content) {
 });
 ```
 
+### postScreenshot
 
+```js
+var onesky = require('onesky-utils');
+
+var options = {
+  secret: '1234567',
+  apiKey: 'abcdefg',
+  projectId: '123',
+  name: 'screenshot-name',
+  image: 'base64-encoded-image',
+  tags: [
+    {
+      key: 'translation-key',
+      x: 100,
+      y: 100,
+      width: 100,
+      height: 100,
+      file: 'translations.po',
+    },
+  ],
+};
+
+onesky.postScreenshot(options).then(function(response) {
+    console.log(response);
+  }).catch(function(error) {
+    console.log(error);
+  });
+```
 ### postFile
 
 ```js
@@ -119,6 +147,25 @@ The `options` object is required. Options include:
 - **options.language** - Language version
 - **options.secret** - `secret` and `apiKey` are used for authentication
 - **options.apiKey**
+
+### postScreenshot(options)
+
+Uploads screenshot file to OneSky.
+
+The `options` object is required. Options include:
+
+* **options.projectId** - Numerical ID of the project
+* **options.secret** - `secret` used for authentication
+* **options.apiKey** - `apiKey` used for authentication
+* **options.name** - A unique name to identify where the image located at your website, apps, blogs, etc... (Hints: path of the webpage)
+* **options.image** - Base64 encoded image data in Data URI scheme structure. Please reference to Data URI scheme and Base64
+* **options.tags[]** - Translations bind to the screenshot
+* **options.tags[].key** - Key of the translation
+* **options.tags[].x** - X-axis of the translation component
+* **options.tags[].y** - Y-axis of the translation component
+* **options.tags[].width** - Width of the translation component
+* **options.tags[].height** - Height of the translation component
+* **options.tags[].file** (Optional) - Name of the string file
 
 ### postFile(options)
 Uploads translation file to OneSky.
