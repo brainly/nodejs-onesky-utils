@@ -4,7 +4,7 @@ Node.js utils for working with [OneSky](http://www.oneskyapp.com/) translation s
 ## Install
 
 ```
-$ npm install npm i @brainly/onesky-utils
+$ npm i @brainly/onesky-utils
 ```
 
 ## Example
