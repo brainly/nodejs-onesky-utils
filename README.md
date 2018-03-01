@@ -1,6 +1,12 @@
 # nodejs-onesky-utils [![Build Status](https://travis-ci.org/brainly/nodejs-onesky-utils.svg?branch=master)](https://travis-ci.org/brainly/nodejs-onesky-utils) [![Code Climate](https://codeclimate.com/github/brainly/nodejs-onesky-utils/badges/gpa.svg)](https://codeclimate.com/github/brainly/nodejs-onesky-utils) [![npm version](https://badge.fury.io/js/onesky-utils.svg)](http://badge.fury.io/js/onesky-utils)
 Node.js utils for working with [OneSky](http://www.oneskyapp.com/) translation service.
 
+## Install
+
+```
+$ npm install npm i @brainly/onesky-utils
+```
+
 ## Example
 
 ### getFile
@@ -83,12 +89,6 @@ onesky.getLanguages(options).then(function(content) {
 }).catch(function(error) {
   console.log(error);
 });
-```
-
-## Install
-
-```
-$ npm install onesky-utils
 ```
 
 ## API
