@@ -1,6 +1,6 @@
 {
   "name": "@brainly/onesky-utils",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Node.js utils for working with OneSky translation service.",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.12.0",
-    "mocha": "^5.2.0",
+    "mocha": "^7.2.0",
     "mockery": "^2.1.0",
     "sinon": "^7.2.2",
     "sinon-chai": "^3.3.0"
