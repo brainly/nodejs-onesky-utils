@@ -49,7 +49,7 @@ onesky.getFiles(options).then(function(content) {
 ### getMultilingualFile
 
 ```js
-var onesky = require('onesky-utils');
+var onesky = require('@brainly/onesky-utils');
 
 var options = {
   language: 'en_EN',
@@ -70,7 +70,7 @@ onesky.getMultilingualFile(options).then(function(content) {
 ### postScreenshot
 
 ```js
-var onesky = require('onesky-utils');
+var onesky = require('@brainly/onesky-utils');
 
 var options = {
   secret: '1234567',
@@ -99,7 +99,7 @@ onesky.postScreenshot(options).then(function(response) {
 ### postFile
 
 ```js
-var onesky = require('onesky-utils');
+var onesky = require('@brainly/onesky-utils');
 
 var options = {
   language: 'en-US',
@@ -122,7 +122,7 @@ onesky.postFile(options).then(function(content) {
 ### getLanguages
 
 ```js
-var onesky = require('onesky-utils');
+var onesky = require('@brainly/onesky-utils');
 
 var options = {
   apiKey: 'abcdefg',
