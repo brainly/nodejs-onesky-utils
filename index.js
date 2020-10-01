@@ -10,5 +10,7 @@ module.exports = {
   getMultilingualFile: rootRequire('lib/getMultilingualFile.js'),
   postFile: rootRequire('lib/postFile.js'),
   postScreenshot: rootRequire('lib/postScreenshot.js'),
-  getLanguages: rootRequire('lib/getLanguages.js')
+  getLanguages: rootRequire('lib/getLanguages.js'),
+  getImportTask: rootRequire('lib/getImportTask.js'),
+  listImportTasks: rootRequire('lib/listImportTasks.js'),
 };
